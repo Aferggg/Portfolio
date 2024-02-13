@@ -24,7 +24,9 @@ export default function Landing() {
     return (
         <div className="landing" id="landing">
             <div className="imgContainer">
+                <div className="imgWrapper">
                 <img src={profile} alt="Profile picture of Amanda Ferguson" />
+                </div>
             </div>
             <div className="content">
                 <div className="text">

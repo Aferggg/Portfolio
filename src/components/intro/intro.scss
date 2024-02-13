@@ -11,10 +11,17 @@
     background-attachment: fixed;
     animation: fadeIn 5s;
 
-    @include mobile{
+    @include mobile {
         flex-direction: column;
         align-items: center;
-
+        padding: 20px; // Add some padding
+        // background-size: auto;
+        background-position: center; // Change this line to center the image    
+    
+        .text {
+            font-size: 1.2em; // Increase the text size
+            margin: 20px 0; // Add some margin
+        }
     }
 
     .text{

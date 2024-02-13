@@ -12,6 +12,7 @@
 
         @include mobile{
             font-size: 20px;
+            overflow: hidden;
         }
     }
 
@@ -21,9 +22,24 @@
         list-style: none;
         display: flex;
 
-        @include mobile{
-            flex-wrap: wrap;
-            justify-content: center;
+        @include mobile {
+            h1 {
+                font-size: 30px; // Increase the font-size
+                overflow: hidden; // Hide the overflow
+            }
+    
+            ul {
+                flex-direction: column; // Stack the items vertically
+                align-items: center; // Center the items
+                width: 100%; // Make sure the width doesn't exceed the viewport width
+                margin: 0; // Remove the margin
+                overflow: hidden;
+            }
+    
+            .portfolioItem {
+                font-size: 20px; // Increase the font-size of the icons
+                margin: 10px 0; // Decrease the space between the icons
+            }
         }
         
     }
@@ -62,6 +78,7 @@
             h3{ 
                 position: absolute;
                 font-size: 20px;
+                overflow: hidden;
             }
             img{
                 width: 100%;
