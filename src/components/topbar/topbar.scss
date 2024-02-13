@@ -12,6 +12,10 @@
 
     a {
         text-decoration: none;
+
+        &:visited {
+            color: #103225;
+        }
     }
     
     .wrapper {

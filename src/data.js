@@ -1,39 +1,46 @@
+import boopd from "./images/boopd.png";
+import acnh from "./images/acnh.png";
+import abides from "./images/abides.jpeg";
+import aptapp from "./images/aptapp.webp";
+import millerconsulting from "./images/millerconsulting.png";
+import vanya from "./images/vanya.png";
+
 export const featuredPortfolio = [
     {
       id: 1,
-      title: "Social Media App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+      title: "Boopd - Capstone Project",
+      img: boopd,
+      link: "https://www.behance.net/gallery/127078067/Full-Stack-Capstone-Project"
     },
     {
       id: 2,
-      title: "Rampa UI Design",
-      img:
-        "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
+      title: "Vanya Designs",
+      img: vanya,
+      url: "https://www.behance.net/gallery/114542339/Vanya-Designs-Re-Brand",
     },
     {
       id: 3,
-      title: "E-commerce Web Design",
-      img:
-        "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
+      title: "Strikes and Gutters",
+      img: abides,
+      url: "https://github.com/AFerg15/strikes-and-gutters",
     },
     {
       id: 4,
-      title: "Relax Mobile App",
-      img:
-        "https://cdn.dribbble.com/users/4095861/screenshots/15467417/media/d6a15c416626f12b31fa5ca1db192572.png?compress=1&resize=1200x900",
+      title: "Apartment App",
+      img: aptapp,
+      url: "https://github.com/learn-academy-2021-charlie/apartment-app-AFerg15",
     },
     {
       id: 5,
-      title: "Hero Web Design",
-      img:
-        "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+      title: "R Miller Consulting",
+      img: millerconsulting,
+      url: "https://www.behance.net/gallery/115962617/Web-Site-for-Consultant",
     },
     {
       id: 6,
-      title: "Banking App",
-      img:
-        "https://cdn.dribbble.com/users/3307260/screenshots/15468444/media/447b4501f7a145b05e11c70199a9c417.jpg?compress=1&resize=1200x900",
+      title: "Animal Crossing Tinder",
+      img: acnh,
+      url: "https://github.com/learn-academy-2021-charlie/cat-tinder-frontend-amanda-and-chauncy",
     },
   ];
   
