@@ -34,6 +34,11 @@ export default function Landing() {
                         <h1>I'm Amanda Ferguson</h1>
                         <h3>And I <span className='cursor-text' ref={textRef}></span></h3>
                         <p>After more than a decade in the creative industry, I transitioned to software development in 2021. My background in strategic marketing allows me to combine my skills into a unique combination which sets me apart as a bridge of communciation between design and development teams.</p>
+                        <p>This portfolio was created using React</p>
+                        <a href="https://github.com/Aferggg/Portfolio" 
+                        target="_blank" rel="noopener noreferrer" 
+                        className="resume-button">View on GitHub
+                        </a>
                         <a href={resume} className='resume-button' download>Download my resume</a>
                     </div>
                 </div>

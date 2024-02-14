@@ -14,19 +14,25 @@ import clay from "./images/clay.png";
 export const featuredPortfolio = [
     {
       id: 1,
-      title: "Boopd - Capstone Project",
+      title: "Boopd",
+      description: "Every snoot deserves a boop, a Capstone project with full CRUD functionality. Created to aid pets displaced by natural disasters, inability to afford medical care or other unforeseen circumstances. This project was built in 2 weeks with a team of 4 developers. I was responsible for the front-end as well as the UX/UI design. I created the logo and branding for the project. This project was built using React in Rails.",
+      tech: "React in Rails, Tailwind, CSS",
       img: boopd,
       link: "https://www.behance.net/gallery/127078067/Full-Stack-Capstone-Project"
     },
     {
       id: 2,
       title: "Vanya Designs",
+      description: "A custom wedding designer specializing in reimagining heirloom gowns. I was responsible for the re-branding of the company. I created a new logo, business cards, external signage and a new website. I also created a new color scheme and typography for the brand. I built the website using WordPress and leveraging HTML and CSS to create a custom theme. I used Adobe Creative Suite to create the new branding materials I also used HTML and CSS to create the website.",
+      tech: "WordPress, Adobe Creative Suite, HTML, CSS",
       img: vanya,
       url: "https://www.behance.net/gallery/114542339/Vanya-Designs-Re-Brand",
     },
     {
       id: 3,
       title: "Strikes and Gutters",
+      description: "That rug really pulled the room together. A simple Treasure Hunt style game built using React and CSS. The house always wins.",
+      tech: "WordPress, Adobe Creative Suite, HTML, CSS",
       img: abides,
       url: "https://github.com/AFerg15/strikes-and-gutters",
     },
@@ -97,6 +103,7 @@ export const featuredPortfolio = [
     {
       id: 2,
       title: "Content Rampa UI Design",
+      
       img:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
     },

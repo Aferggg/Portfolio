@@ -1,0 +1,36 @@
+.card-container-outer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 1125px; /* Adjust this to fit three cards */
+
+    > button {
+        background: transparent;
+        border: none;
+        font-size: 2em;
+        color: #333; /* Adjust color as needed */
+      }
+    
+      > button:first-of-type:before {
+        content: '❮'; /* Left arrow */
+      }
+      
+      > button:last-of-type:before {
+        content: '❯'; /* Right arrow */
+      }
+  }
+  
+  .card-container-inner {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+  }
+  
+  .card {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust this to the actual width of your cards */
+    margin-right: 20px; /* Adjust this to the actual margin of your cards */
+  }
