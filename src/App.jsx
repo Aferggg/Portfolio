@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro"
 import Portfolio from './components/portfolio/Portfolio';
@@ -6,12 +6,24 @@ import Portfolio from './components/portfolio/Portfolio';
 import Testimonials from './components/testimonials/testimonials'
 import Contact from './components/contact/Contact';
 import "./app.scss";
-import { useState } from 'react';
 import Menu from "./components/menu/Menu";
 import Landing from './components/landing/landing';
+import Modal from './components/modal/Modal'; // Import the Modal component
 
 function App() {
   const [menuOpen,setMenuOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false); // Add this state
+  const [currentItem, setCurrentItem] = useState(null); // And this state
+
+  const openModal = (item) => {
+    setCurrentItem(item);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="app">
      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
@@ -19,12 +31,14 @@ function App() {
      <div className="sections">
        <Intro/>
        <Landing/>
-       <Portfolio/>
+       <Portfolio openModal={openModal}/> {/* Pass the openModal function to Portfolio */}
        {/* <Works/> */}
        <Testimonials/>
        <Contact/>
      </div>
+     {isModalOpen && currentItem && <Modal item={currentItem} closeModal={closeModal} />} {/* Render the Modal here */}
     </div>
   );
 }
+
 export default App;
