@@ -1,17 +1,4 @@
-// .container {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   flex-direction: column;
-//   width: 100vw;
-//   height: 100vh;
-//   background-color: rgba(0, 0, 0, 0.127);
-
-//   h1 {
-//     text-align: center;
-//     margin-bottom: 20px;
-//   }
-// }
+@import "../../global.scss";
 
 .card-container-outer {
     display: flex;
@@ -46,6 +33,6 @@
   
   .card {
     flex: 0 0 auto;
-    width: 320px; /* Adjust this to the actual width of your cards */
-    margin-right: 20px; /* Adjust this to the actual margin of your cards */
+    width: 320px; 
+    margin-right: 20px; 
   }

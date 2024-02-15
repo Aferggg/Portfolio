@@ -3,7 +3,6 @@ import "./landing.scss"
 import { init } from 'ityped'
 import profile from "../../images/profile.jpeg"
 import resume from "../../images/resume.pdf"
-//formatted and refactored
 
 export default function Landing() {
     const textRef = useRef()

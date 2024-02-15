@@ -8,12 +8,12 @@ import Contact from './components/contact/Contact';
 import "./app.scss";
 import Menu from "./components/menu/Menu";
 import Landing from './components/landing/landing';
-import Modal from './components/modal/Modal'; // Import the Modal component
+import Modal from './components/modal/Modal'; 
 
 function App() {
   const [menuOpen,setMenuOpen] = useState(false)
-  const [isModalOpen, setIsModalOpen] = useState(false); // Add this state
-  const [currentItem, setCurrentItem] = useState(null); // And this state
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentItem, setCurrentItem] = useState(null); 
 
   const openModal = (item) => {
     setCurrentItem(item);
@@ -31,12 +31,12 @@ function App() {
      <div className="sections">
        <Intro/>
        <Landing/>
-       <Portfolio openModal={openModal}/> {/* Pass the openModal function to Portfolio */}
+       <Portfolio openModal={openModal}/> 
        {/* <Works/> */}
        <Testimonials/>
        <Contact/>
      </div>
-     {isModalOpen && currentItem && <Modal item={currentItem} closeModal={closeModal} />} {/* Render the Modal here */}
+     {isModalOpen && currentItem && <Modal item={currentItem} closeModal={closeModal} />}
     </div>
   );
 }

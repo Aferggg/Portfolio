@@ -1,10 +1,10 @@
 import React, { useRef } from 'react';
-import Card from '../card/Card'; // Adjust the path to match your project structure
+import Card from '../card/Card'; 
 import './CardContainer.scss';
 
 function CardContainer({ items, openModal }) {
   const scrollContainer = useRef(null);
-  const cardWidth = 395; // Adjust this to the actual width of your cards (including margins)
+  const cardWidth = 395; 
 
   const scrollLeft = () => {
     scrollContainer.current.scrollTo({
