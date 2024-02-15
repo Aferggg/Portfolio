@@ -4,14 +4,20 @@ import './CardContainer.scss';
 
 function CardContainer({ items, openModal }) {
   const scrollContainer = useRef(null);
-  const cardWidth = 320; // Adjust this to the actual width of your cards (including margins)
+  const cardWidth = 395; // Adjust this to the actual width of your cards (including margins)
 
   const scrollLeft = () => {
-    scrollContainer.current.scrollLeft -= cardWidth * 2.5;
+    scrollContainer.current.scrollTo({
+      left: scrollContainer.current.scrollLeft - cardWidth * 3,
+      behavior: 'smooth'
+    });
   };
-
+  
   const scrollRight = () => {
-    scrollContainer.current.scrollLeft += cardWidth * 3;
+    scrollContainer.current.scrollTo({
+      left: scrollContainer.current.scrollLeft + cardWidth * 3,
+      behavior: 'smooth'
+    });
   };
 
   return (

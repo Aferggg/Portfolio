@@ -5,7 +5,7 @@ import './portfolio.scss';
 function Portfolio( { openModal } ) {
   return (
     <div className="portfolio">
-        <div className="container">
+        <div className="portfolio-container">
             <h1>Portfolio</h1>
             <CardContainer items={featuredPortfolio} openModal={openModal} />
         </div>
