@@ -54,6 +54,40 @@ export const featuredPortfolio = [
       img: acnh,
       url: "https://github.com/learn-academy-2021-charlie/cat-tinder-frontend-amanda-and-chauncy",
     },
+    {
+      id: 7,
+      title: "Wichita State University Foundation Brand Guide",
+      img: wsunext,
+      url: "https://www.behance.net/gallery/114544359/WSU-NEXT-Marketing-Campaign",},
+    {
+      id: 8,
+      title: "Healthy Green Nutrition Rebrand and site build",
+      img: healthygreen,
+      url: "https://www.behance.net/gallery/114539679/Healthy-Green-Nutrition",
+    },
+    {
+      id: 9,
+      title: "Freedom Through Fashion",
+      img: ftf,
+      url: "https://www.behance.net/gallery/114539013/Freedom-Through-Fashion-Fundraising-Gala",},
+    {
+      id: 10,
+      title: "Wichita State University Foundation Brand Guide",
+      img: wsufbrand,
+      url: "https://www.behance.net/gallery/114529589/Brand-Guide",
+    },
+    {
+      id: 11,
+      title: "Hornet Cutting Systems",
+      img: hornet,
+      url: "https://www.behance.net/gallery/131152085/Hoodie-Design",
+    },
+    {
+      id: 12,
+      title: "Clay Barton School of Business",
+      img: clay,
+      url: "https://www.behance.net/gallery/115577527/Event-invitations",
+    },
   ];
     
   export const designPortfolio = [
