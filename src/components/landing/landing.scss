@@ -83,6 +83,19 @@
     h3 {
       font-size: 35px;
       margin-bottom: 15px;
+
+      .ityped-cursor {
+        animation: blink 1.5s infinite;
+    }
+
+    @keyframes blink {
+        50%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
     }
 
     p {
