@@ -10,6 +10,7 @@ import ftf from "./images/ftf.png";
 import wsufbrand from "./images/wsufbrand.png";
 import hornet from "./images/hornet.png";
 import clay from "./images/clay.png";
+import builders from "./images/builders.png";
 
 export const featuredPortfolio = [
     {
@@ -39,6 +40,8 @@ export const featuredPortfolio = [
     {
       id: 4,
       title: "Apartment App",
+      description: "A full stack application for hunting apartments.",
+      tech: "Ruby on Rails",
       img: aptapp,
       link: "https://github.com/learn-academy-2021-charlie/apartment-app-AFerg15",
     },
@@ -60,14 +63,14 @@ export const featuredPortfolio = [
     },
     {
       id: 7,
-      title: "Wichita State University Foundation 2021 Marketing Campaign",
+      title: "WSU NEXT",
       description: "A marketing campaign celebrating the 125th anniversary of Wichita State University. The campaign focuses on reflections from the past and how we can use those reflections to shape the future. I created all collateral for the campaign from the logo to print materials, outdoor advertising and social media graphics. I used Adobe Creative Suite to create the branding materials.",
       tech: "Adobe Creative Suite",
       img: wsunext,
       link: "https://www.behance.net/gallery/114544359/WSU-NEXT-Marketing-Campaign",},
     {
       id: 8,
-      title: "Healthy Green Nutrition Rebrand and site build",
+      title: "Healthy Green Nutrition",
       description: "Full re-brand for Healthy Green Nutrition LLC including site re-build in WordPress. I created a new logo, business cards, and external signage. I also created a new color scheme and typography for the brand. I built the website using WordPress and leveraging HTML and CSS to create a custom theme. I used Adobe Creative Suite to create the new branding materials.",
       tech: "Adobe Creative Suite, WordPress, HTML, CSS",
       img: healthygreen,
@@ -82,7 +85,7 @@ export const featuredPortfolio = [
       link: "https://www.behance.net/gallery/114539013/Freedom-Through-Fashion-Fundraising-Gala",},
     {
       id: 10,
-      title: "Wichita State University Foundation Brand Guide",
+      title: "WSUF Brand Guide",
       description: "Full re-brand for the Wichita State University Foundation including new logo, brand standards, patterns, style guide, presentation templates, letterhead etc.",
       tech: "Adobe Creative Suite",
       img: wsufbrand,
@@ -98,11 +101,19 @@ export const featuredPortfolio = [
     },
     {
       id: 12,
-      title: "Clay Barton School of Business",
+      title: "Clay Barton",
       description: "Event collateral for the 30th anniversary celebration of the Clay Barton School of Business. I was responsible for the entire marketing campaign and related donor relations outreach as well as the event design. Adobe Creative Suite was used for all marketing material designsyar.",
       tech: "Adobe Creative Suite",
       img: clay,
       link: "https://www.behance.net/gallery/115577527/Event-invitations",
+    },
+    {
+      id: 13,
+      title: "Builders Inc",
+      description: "Full site build for a property managament client.",
+      tech: "Wordpress, HTML, CSS",
+      img: builders,
+      link: "https://buildersinc.com/",
     },
   ];
     

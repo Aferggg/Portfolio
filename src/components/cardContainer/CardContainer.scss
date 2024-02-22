@@ -6,12 +6,15 @@
     align-items: center;
     overflow: hidden;
     width: 1165px; /* Adjust this to fit three cards */
+    padding: 0 20px;
 
     > button {
         background: transparent;
         border: none;
         font-size: 2em;
         color: #333; /* Adjust color as needed */
+        flex-shrink: 0 ;
+        padding: 0 10px;
       }
     
       > button:first-of-type:before {
@@ -26,9 +29,10 @@
   .card-container-inner {
     display: flex;
     flex-direction: row;
-    white-space: nowrap;
+    // white-space: nowrap;
     scroll-behavior: smooth;
     padding: 20px 0;
+    overflow: hidden;
   }
   
   .card {

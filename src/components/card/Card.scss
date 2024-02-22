@@ -8,11 +8,15 @@
   padding: 10px;
   display: grid; 
   grid-template-rows: auto 1fr auto; 
-  background-color: white;
   border-radius: 5px;
   margin: 20px;
-
-  min-height: 75%;
+  flex: 0 0 auto;
+  width: 300px; /* Adjust width as needed */
+  margin-right: 15px; /* Adjust margin as needed */
+  overflow: auto; /* Add this line to enable scrolling */
+  background-color: white;
+  max-height: 550px;
+  min-height: auto;
   transition: all 1s ease;
   box-shadow: 0px 0px 15px -8px black;
   
@@ -44,13 +48,15 @@
   }
 
   .card-title {
-    font-size: 25px;
+    font-size: 20px;
     margin: 5px;
   }
   
   .card-description {
-    font-size: 15px;
+    font-size: 13px;
     margin: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .button-container {
