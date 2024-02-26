@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react'
 import "./landing.scss"
 import { init } from 'ityped'
-import profile from "../../images/profile.jpeg"
+import profilepic from "../../images/profilepic2.png"
 import resume from "../../images/resume.pdf"
 
 export default function Landing() {
@@ -24,7 +24,7 @@ export default function Landing() {
         <div className="landing" id="landing">
             <div className="imgContainer">
                 <div className="imgWrapper">
-                <img src={profile} alt="Profile picture of Amanda Ferguson" />
+                <img src={profilepic} alt="Profile picture of Amanda Ferguson" />
                 </div>
             </div>
             <div className="content">

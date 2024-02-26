@@ -30,12 +30,14 @@
         img {
           width: calc(100% - 10px);
           height: calc(100% - 10px);
+          object-fit: cover;
           border-radius: 50%;
           border: $secondaryColor 5px solid;
+          object-position: center;
         }
     
         &::after {
-          content: "Not an actual potato";
+          // content: "Not an actual potato";
           position: absolute;
           top: 0;
           left: 0;

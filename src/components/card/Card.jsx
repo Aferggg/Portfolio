@@ -23,7 +23,7 @@ function Card({ item, openModal }) {
             <div className="bottom-section">
                 <p className="card-tech">{item.tech}</p>
                 <div className="button-container">
-                    <a className="card-button" href={item.url}>View</a>
+                    <a className="card-button" href={item.url} target="_blank">View</a>
                     <button className="card-button" onClick={() => openModal(item)}>More Info</button>
                 </div>
             </div>
