@@ -55,7 +55,7 @@ export const featuredPortfolio = [
     },
     {
       id: 6,
-      title: "Law and Order Tinder",
+      title: "Animal Crossing Tinder",
       description: "A Cat Tinder style project with an Animal Crossing theme.",
       tech: "React in Rails, Tailwind, SCSS",
       img: acnh,
