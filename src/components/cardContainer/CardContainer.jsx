@@ -5,7 +5,10 @@ import './CardContainer.scss';
 function CardContainer({ items, openModal }) {
   const scrollContainer = useRef(null);
   const [showLeftScroll, setShowLeftScroll] = useState(false);
-  const cardWidth = 395; 
+  const cardWidth = 320; 
+  const cardMargin = 20;
+  const cardPadding = 21;
+  const totalCardWidth = cardWidth + cardMargin + (2 * cardPadding);
 
   const checkScrollPosition = () => {
     if (scrollContainer.current.scrollLeft > 0) {
@@ -25,14 +28,14 @@ function CardContainer({ items, openModal }) {
 
   const scrollLeft = () => {
     scrollContainer.current.scrollTo({
-      left: scrollContainer.current.scrollLeft - cardWidth * 3,
+      left: scrollContainer.current.scrollLeft - totalCardWidth * 3,
       behavior: 'smooth'
     });
   };
   
   const scrollRight = () => {
     scrollContainer.current.scrollTo({
-      left: scrollContainer.current.scrollLeft + cardWidth * 3,
+      left: scrollContainer.current.scrollLeft + totalCardWidth * 3,
       behavior: 'smooth'
     });
   };
