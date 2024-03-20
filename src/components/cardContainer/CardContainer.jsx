@@ -7,7 +7,7 @@ function CardContainer({ items, openModal }) {
   const [showLeftScroll, setShowLeftScroll] = useState(false);
   const cardWidth = 320; 
   const cardMargin = 20;
-  const cardPadding = 21;
+  const cardPadding = 21.75;
   const totalCardWidth = cardWidth + cardMargin + (2 * cardPadding);
 
   const checkScrollPosition = () => {

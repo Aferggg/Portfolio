@@ -5,6 +5,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+
+  .canvas-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; // Ensure the canvas is behind other elements
+  }
 
   @include mobile{
     justify-content: space-around;
@@ -13,6 +23,9 @@
 
   h1 {
     font-size: 50px;
+    z-index: 3;
+    cursor: default;
+    pointer-events: none;
 
     @include mobile{
       font-size: 20px;
@@ -41,6 +54,9 @@
       justify-content: space-around;
       padding: 20px;
       transition: all 1s ease;
+      background-color: white;
+      z-index: 2;
+      cursor: default;
 
       @include mobile{
         height: 180px;
