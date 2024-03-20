@@ -55,41 +55,6 @@ export default function Testimonials() {
       console.error("Error loading image");
     };
 
-    // function handleMouseMove(event) {
-    //   const rect = canvas.getBoundingClientRect(); // Get the position of the canvas
-    //   const x = event.clientX - rect.left; // Calculate the x-coordinate of the cursor relative to the canvas
-    //   const y = event.clientY - rect.top; // Calculate the y-coordinate of the cursor relative to the canvas
-    
-    //   ctx.globalCompositeOperation = "destination-out"; // Set the operation to reveal the image
-    //   ctx.beginPath();
-    //   ctx.arc(x, y, 50, 0, Math.PI * 2, true); // Use the calculated coordinates
-    //   ctx.shadowBlur = 20; // Set the amount of blur
-    //   ctx.shadowColor = 'black'; // Set the color of the shadow
-    //   ctx.shadowOffsetX = 0; // Set the horizontal offset of the shadow
-    //   ctx.shadowOffsetY = 0; // Set the vertical offset of the shadow
-    //   ctx.fill();
-    // }
-
-    // let lastX = 0;
-    // let lastY = 0;
-
-    // function handleMouseMove(event) {
-    //   const rect = canvas.getBoundingClientRect(); // Get the position of the canvas
-    //   const x = event.clientX - rect.left; // Calculate the x-coordinate of the cursor relative to the canvas
-    //   const y = event.clientY - rect.top; // Calculate the y-coordinate of the cursor relative to the canvas
-
-    //   ctx.globalCompositeOperation = "destination-out"; // Set the operation to reveal the image
-    //   ctx.beginPath();
-    //   ctx.moveTo(lastX, lastY); // Start the path at the last cursor position
-    //   ctx.lineTo(x, y); // Draw a line to the current cursor position
-    //   ctx.lineWidth = 50; // Set the width of the line
-    //   ctx.lineJoin = 'round'; // Set the line join style to round
-    //   ctx.lineCap = 'round'; // Set the line cap style to round
-    //   ctx.stroke(); // Draw the line
-
-    //   lastX = x; // Update the last cursor position
-    //   lastY = y;
-    // }
     function handleMouseMove(event) {
       const rect = canvas.getBoundingClientRect(); // Get the position of the canvas
       const x = event.clientX - rect.left; // Calculate the x-coordinate of the cursor relative to the canvas

@@ -47,20 +47,20 @@ export const featuredPortfolio = [
     },
     {
       id: 5,
-      title: "R Miller Consulting",
-      description: "Full site build for a consulting client.",
-      tech: "WordPress, HTML, CSS",
-      img: millerconsulting,
-      url: "https://www.behance.net/gallery/115962617/Web-Site-for-Consultant"
+      title: "Clay Barton",
+      description: "Event collateral for the 30th anniversary celebration of the Clay Barton School of Business. I was responsible for the entire marketing campaign and related donor relations outreach as well as the event design. Adobe Creative Suite was used for all marketing material designsyar.",
+      tech: "Adobe Creative Suite, Illustrator",
+      img: clay,
+      url: "https://www.behance.net/gallery/115577527/Event-invitations"
     },
-    {
-      id: 6,
-      title: "Animal Crossing Tinder",
-      description: "A Cat Tinder style project with an Animal Crossing theme.",
-      tech: "React in Rails, Tailwind, SCSS",
-      img: acnh,
-      url: "https://github.com/learn-academy-2021-charlie/cat-tinder-frontend-amanda-and-chauncy"
-    },
+    // {
+    //   id: 6,
+    //   title: "Animal Crossing Tinder",
+    //   description: "A Cat Tinder style project with an Animal Crossing theme.",
+    //   tech: "React in Rails, Tailwind, SCSS",
+    //   img: acnh,
+    //   url: "https://github.com/learn-academy-2021-charlie/cat-tinder-frontend-amanda-and-chauncy"
+    // },
     {
       id: 7,
       title: "WSU NEXT",
@@ -103,11 +103,11 @@ export const featuredPortfolio = [
     },
     {
       id: 12,
-      title: "Clay Barton",
-      description: "Event collateral for the 30th anniversary celebration of the Clay Barton School of Business. I was responsible for the entire marketing campaign and related donor relations outreach as well as the event design. Adobe Creative Suite was used for all marketing material designsyar.",
-      tech: "Adobe Creative Suite, Illustrator",
-      img: clay,
-      url: "https://www.behance.net/gallery/115577527/Event-invitations"
+      title: "R Miller Consulting",
+      description: "Full site build for a consulting client.",
+      tech: "WordPress, HTML, CSS",
+      img: millerconsulting,
+      url: "https://www.behance.net/gallery/115962617/Web-Site-for-Consultant"
     },
     {
       id: 13,
