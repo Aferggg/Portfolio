@@ -109,7 +109,6 @@ export default function Testimonials() {
   return (
     <div className="testimonials" id="testimonials">
       <canvas ref={canvasRef} className="canvas-background"></canvas>
-      <h1>Skills</h1>
       <div className="container">
         {data.map((d) => (
           <div
@@ -117,14 +116,14 @@ export default function Testimonials() {
             style={{ backgroundColor: "white" }}
             key={d.id}
           >
+              <h3>{d.name}</h3>
+              <h4>{d.title}</h4>
+            <div className="center">{d.desc}</div>
+            <div className="bottom">
+            </div>
             <div className="top">
               <img className="user" src={d.img} alt="" />
               <img className="right" src={d.icon} alt="" />
-            </div>
-            <div className="center">{d.desc}</div>
-            <div className="bottom">
-              <h3>{d.name}</h3>
-              <h4>{d.title}</h4>
             </div>
           </div>
         ))}

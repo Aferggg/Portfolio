@@ -3,12 +3,13 @@
 
     .sections{
         width: 100%;
-        height: calc(100vh - 70px);
+        height: calc(100dvh - 70px);
+        box-sizing: border-box;
         background-color: white;
         position: relative;
         top: 70px;
         scroll-behavior: smooth;
-        scroll-snap-type: y proximity;
+        scroll-snap-type: y ;
         scrollbar-width: none; //for firefox
         &::-webkit-scrollbar{
             display: none;

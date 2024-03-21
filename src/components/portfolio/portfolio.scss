@@ -2,7 +2,7 @@
 
 .portfolio {
     width: 70%;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
@@ -20,13 +20,18 @@
         flex-direction: column;
         flex-wrap: wrap;
         width: 100vw;
-        min-height: 100vh; 
+        // min-height: 100vh; 
         background-color: rgba(0, 0, 0, 0.127);
 
         .portfolio-title {
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          margin-bottom: 20px;
+          font-size: 40px;
+          width: 100%;
+          text-align: center;
 
             @media (max-height: 730px) {
               display: none;
