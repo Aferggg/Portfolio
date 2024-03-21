@@ -2,10 +2,16 @@
 
 .portfolio {
     width: 70%;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
+    overflow: hidden;
     
+    @include mobile {
+      overflow: hidden;
+    }
+  
 
     .portfolio-container {
         display: flex;
@@ -17,9 +23,17 @@
         min-height: 100vh; 
         background-color: rgba(0, 0, 0, 0.127);
 
-        h1 {
+        .portfolio-title {
             text-align: center;
             margin-bottom: 20px;
+            font-size: 50px;
+
+            @media (max-height: 730px) {
+              display: none;
+            }
+            @include mobile{
+              font-size: 40px;
+            }
           }
     }
 

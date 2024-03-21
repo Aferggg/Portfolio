@@ -3,7 +3,7 @@
 .menu {
   width: 300px;
   height: 100vh;
-  background-color: #41a67f75;
+  background-color: #41a67f9d;
   position: fixed;
   top: 0;
   right: -300px;
@@ -13,6 +13,12 @@
   align-items: center;
   justify-content: center;
   transition: all 1s ease;
+  z-index: 3;
+
+  @include mobile {
+    width: 200px; // Make the menu narrower on mobile
+    background-color: #41a67fdc;
+  }
 
   &.active {
     right: 0;
@@ -27,12 +33,20 @@
     color: white;
     width: 60%;
 
+    @include mobile {
+      width: 100%; // Make the menu narrower on mobile
+    }
+
     li {
       margin-bottom: 25px;
       a {
         font-size: inherit;
         color: inherit;
         text-decoration: none;
+
+        @include mobile {
+          font-weight: bold;
+        }
       }
 
       &:hover {

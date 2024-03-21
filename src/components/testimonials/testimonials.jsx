@@ -82,6 +82,7 @@ export default function Testimonials() {
       canvas.height = canvas.parentElement.offsetHeight;
       ctx.fillStyle = "white"; 
       ctx.fillRect(0, 0, canvas.width, canvas.height); 
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
     }
 
     function handleClick() {
