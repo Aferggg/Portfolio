@@ -39,7 +39,6 @@ export default function Testimonials() {
 
     const ctx = canvas.getContext("2d");
 
-    // Set initial state: fill canvas with white color
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -47,7 +46,6 @@ export default function Testimonials() {
     img.src = colorful;
 
     img.onload = function () {
-      // Draw the image initially
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height); 
     };
 
@@ -56,57 +54,50 @@ export default function Testimonials() {
     };
 
     function handleMouseMove(event) {
-      const rect = canvas.getBoundingClientRect(); // Get the position of the canvas
-      const x = event.clientX - rect.left; // Calculate the x-coordinate of the cursor relative to the canvas
-      const y = event.clientY - rect.top; // Calculate the y-coordinate of the cursor relative to the canvas
+      const rect = canvas.getBoundingClientRect();
+      const x = event.clientX - rect.left; 
+      const y = event.clientY - rect.top; 
     
-      ctx.globalCompositeOperation = "destination-out"; // Set the operation to reveal the image
-    
-      // Stamp parameters
-      const stampSize = 4; // Size of each pixel stamp
-      const maxDistance = 250; // Maximum distance from center for full stamp density
-    
-      // Draw pixels in a circular pattern around the cursor position
+      ctx.globalCompositeOperation = "destination-out"; 
+
+      const stampSize = 4; 
+      const maxDistance = 250; 
       for (let i = 0; i < maxDistance; i++) {
-        const density = (maxDistance - i) / maxDistance; // Calculate density based on distance from center
-        const densityFactor = Math.floor(density * 3); // Scale density to adjust pixel density
+        const density = (maxDistance - i) / maxDistance; 
+        const densityFactor = Math.floor(density * 3); 
         for (let j = 0; j < densityFactor; j++) {
-          const angle = (Math.random() * Math.PI * 2); // Random angle for each pixel
-          const offsetX = Math.cos(angle) * i; // Calculate x offset
-          const offsetY = Math.sin(angle) * i; // Calculate y offset
-          const stampX = x + offsetX; // Calculate pixel x-coordinate
-          const stampY = y + offsetY; // Calculate pixel y-coordinate
+          const angle = (Math.random() * Math.PI * 2); 
+          const offsetX = Math.cos(angle) * i; 
+          const offsetY = Math.sin(angle) * i; 
+          const stampX = x + offsetX; 
+          const stampY = y + offsetY; 
     
-          // Draw a stamp pixel
           ctx.fillRect(stampX, stampY, stampSize, stampSize);
         }
       }
     }
-    
-    
 
     function handleResize() {
       canvas.width = canvas.parentElement.offsetWidth;
       canvas.height = canvas.parentElement.offsetHeight;
-      ctx.fillStyle = "white"; // Set canvas to white on resize
-      ctx.fillRect(0, 0, canvas.width, canvas.height); // Fill the resized canvas with white color
+      ctx.fillStyle = "white"; 
+      ctx.fillRect(0, 0, canvas.width, canvas.height); 
     }
 
     function handleClick() {
       ctx.globalCompositeOperation = 'destination-out';
-      ctx.fillStyle = 'rgba(0, 0, 0, 1)'; // Set fill color to transparent
-      ctx.fillRect(0, 0, canvas.width, canvas.height); // Fill the entire canvas
+      ctx.fillStyle = 'rgba(0, 0, 0, 1)'; 
+      ctx.fillRect(0, 0, canvas.width, canvas.height); 
     
-      ctx.globalCompositeOperation = 'source-over'; // Set the operation to draw the image
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height); // Draw the image
+      ctx.globalCompositeOperation = 'source-over'; 
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
     }
     
-    canvas.addEventListener('click', handleClick); // Add click event listener
-    canvas.addEventListener("mousemove", handleMouseMove); // Use canvas instead of window for mousemove event
+    canvas.addEventListener('click', handleClick); 
+    canvas.addEventListener("mousemove", handleMouseMove); 
     window.addEventListener("resize", handleResize);
-    handleResize(); // Initial resize
+    handleResize(); 
 
-    // Clean up event listeners on unmount
     return () => {
       canvas.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("resize", handleResize);

@@ -69,6 +69,11 @@
     margin-left: 40px;
     width: 80%;
 
+    @include mobile {
+      overflow: auto; // Enable scrolling on mobile
+      margin-left: 0; // Remove left margin on mobile
+    }
+
     .wrapper {
       margin-top: 300px;
       width: 100%;
@@ -77,10 +82,18 @@
       .cursor-text {
         color: $secondaryColor;
       }
+
+      @include mobile {
+        margin-top: 50px; // Reduce top margin on mobile
+      }
     }
     
     h1 {
       font-size: 60px;
+
+      @include mobile {
+        font-size: 40px;
+      }
     }
     h3 {
       font-size: 35px;
@@ -108,7 +121,6 @@
   }
 
   .resume-button {
-    justify-content: left;
     padding: 10px 10px;
     background-color: $secondaryColor;
     color: white;
@@ -121,9 +133,17 @@
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 500;
-
+  
     &:hover {
       background-color: rgba(51, 50, 67, 0.425);
+    }
+  
+    @include mobile {
+      display: flex; // Change display to flex
+      justify-content: center; // Center the buttons
+      align-items: center;
+      width: 100%; // Change width to 100%
+      margin: 10px auto; // Reduce margin and center the buttons
     }
   }
 
@@ -131,12 +151,12 @@
     flex-direction: column;
     align-items: center;
 
-    .imgContainer,
+    .imgContainer {
+      display: none; // Hide the image on mobile
+    }
+
     .text {
       flex: 1;
-      p {
-        font-size: 20px;
-      }
     }
   }
 }

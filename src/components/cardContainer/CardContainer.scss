@@ -8,6 +8,10 @@
     width: 1180px; /* Adjust this to fit three cards */
     padding: 0 20px;
 
+    @include mobile {
+      width: 100%; // Make the container take up the full width on mobile
+    }
+
     > button {
         background: transparent;
         border: none;
@@ -15,10 +19,16 @@
         color: #333; /* Adjust color as needed */
         flex-shrink: 0 ;
         padding: 0 10px;
+       
+        @include mobile {
+          display: none;  // Reduce the right margin on mobile
+        }
       }
     
       > button:first-of-type:before {
         content: '❮'; /* Left arrow */
+
+        
       }
       
       > button:last-of-type:before {
@@ -33,10 +43,18 @@
     scroll-behavior: smooth;
     padding: 20px 0;
     overflow: hidden;
+
+    @include mobile {
+      overflow-x: auto; // Enable horizontal scrolling on mobile
+    }
   }
   
   .card {
     flex: 0 0 auto;
     width: 320px; 
     margin-right: 20px; 
+
+    @include mobile {
+      margin-right: 10px; // Reduce the right margin on mobile
+    }
   }

@@ -9,14 +9,6 @@ export default function Intro() {
             >
             <div className="imgContainer">
                 </div>
-            <div className="text">
-                <div className="wrapper">
-
-                </div>
-                <a href="#portfolio">
-                    <img src="assets/down.png" alt="" className="arrow"/>
-                </a>
-            </div>
         </div>
     )
 }

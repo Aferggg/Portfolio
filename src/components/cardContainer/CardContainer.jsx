@@ -21,8 +21,10 @@ function CardContainer({ items, openModal }) {
   useEffect(() => {
     checkScrollPosition();
     scrollContainer.current.addEventListener('scroll', checkScrollPosition);
+    scrollContainer.current.addEventListener('touchmove', checkScrollPosition);
     return () => {
       scrollContainer.current.removeEventListener('scroll', checkScrollPosition);
+      scrollContainer.current.removeEventListener('touchmove', checkScrollPosition);
     };
   }, []);
 
