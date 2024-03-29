@@ -5,23 +5,32 @@ import profilepic from "../../images/profilepic2.png"
 import resume from "../../images/resume.pdf"
 
 export default function Landing() {
-    const textRef = useRef()
-    
-    useEffect (()=>{
-        init(textRef.current, {
-            showCursor: true,
-            startDelay: 2000,
-            typeSpeed: 50,
-            backDelay: 1500,
-            backSpeed:60,
-            loop: false,
-            disableBackTyping: false,
-            strings: ["design", "develop", "create."],
-          });
-    }, [textRef, init])
+    const textRef = useRef();
+    const sectionRef = useRef();
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            if (entries[0].isIntersecting) {
+                init(textRef.current, {
+                    showCursor: true,
+                    startDelay: 2000,
+                    typeSpeed: 50,
+                    backDelay: 1500,
+                    backSpeed:60,
+                    loop: false,
+                    disableBackTyping: false,
+                    strings: ["design", "develop", "create."],
+                });
+            }
+        }, { threshold: 0.1 });
+
+        observer.observe(sectionRef.current);
+
+        return () => observer.disconnect();
+    }, []);
 
     return (
-        <div className="landing" id="landing">
+        <div className="landing" id="landing" ref={sectionRef}>
             <div className="imgContainer">
                 <div className="imgWrapper">
                 <img src={profilepic} alt="Profile picture of Amanda Ferguson" />
